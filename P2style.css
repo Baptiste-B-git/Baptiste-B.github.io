@@ -1,0 +1,52 @@
+html, body
+{
+    margin:0;
+    padding:0;
+ }
+
+.conteneurheader
+{
+    border: 2px black solid;
+    height: 140px;
+    margin: 30px 30px 0 30px;
+}
+
+.conteneur1
+{
+    display:flex;
+}
+
+.item{
+    font-size:2em;
+    margin: 30px 30px 0 30px;
+    border-radius: 10px;
+}
+
+.hébergement{
+    background-color: #F2F2F2;
+    height: 350px;
+    width: 1450px;
+}
+
+.populaires{
+    background-color: #F2F2F2;
+    height: 350px;
+    width: 380px;
+    margin: 30px 0 0 0;
+}
+
+.conteneur3
+{
+    border: 2px black solid;
+    height: 220px;
+    margin: 30px 30px 20px 30px;
+}
+
+.conteneurfooter
+{
+    background-color: #F2F2F2;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
