@@ -1,52 +1,89 @@
-html, body
-{
-    margin:0;
-    padding:0;
- }
-
-.conteneurheader
-{
-    border: 2px black solid;
-    height: 140px;
-    margin: 30px 30px 0 30px;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.conteneur1
-{
-    display:flex;
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("fonts/Raleway-Medium.ttf");
 }
 
-.item{
-    font-size:2em;
-    margin: 30px 30px 0 30px;
-    border-radius: 10px;
+/*Header*/
+
+h1,
+p,
+ul {
+  font-family: "Raleway-Medium";
 }
 
-.hébergement{
-    background-color: #F2F2F2;
-    height: 350px;
-    width: 1450px;
+h1 {
+  font-size: 1rem;
 }
 
-.populaires{
-    background-color: #F2F2F2;
-    height: 350px;
-    width: 380px;
-    margin: 30px 0 0 0;
+p {
+  font-size: 0.7rem;
+  line-height: 0.1;
 }
 
-.conteneur3
-{
-    border: 2px black solid;
-    height: 220px;
-    margin: 30px 30px 20px 30px;
+/*Navigation*/
+
+nav ul {
+  list-style-type: none;
+  display: flex;
 }
 
-.conteneurfooter
-{
-    background-color: #F2F2F2;
-    height: 110px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  font-size: 1.1em;
+  color: #181818;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-bottom: 3px solid#0065FC;
+}
+
+/*Section*/
+
+.conteneur1 {
+  display: flex;
+}
+
+.item {
+  font-size: 2em;
+  margin: 30px 30px 0 30px;
+  border-radius: 10px;
+}
+
+.hébergement {
+  background-color: #f2f2f2;
+  height: 350px;
+  width: 1450px;
+}
+
+.populaires {
+  background-color: #f2f2f2;
+  height: 350px;
+  width: 380px;
+  margin: 30px 0 0 0;
+}
+
+.conteneur3 {
+  border: 2px black solid;
+  height: 220px;
+  margin: 30px 30px 20px 30px;
+}
+
+.conteneurfooter {
+  background-color: #f2f2f2;
+  height: 110px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
