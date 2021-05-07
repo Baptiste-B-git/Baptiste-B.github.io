@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Projet 2 - Reservia</title>
+		<title>Reservia</title>
 		<link rel="stylesheet" type="text/css" href="P2style.css"
 	</head>
 
@@ -14,25 +14,54 @@
 					<li><a href="#">S'inscrire</a></li>
 				</ul>
 			</nav>
+			
+			<img src="images/zozor_logo.png" alt="Logo de Zozor" />
 
 			<h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
-                  <p>En plein centre ville ou en pleine nature</p> 
+            <p>En plein centre ville ou en pleine nature</p> 
+
+			<form method="POST" action="traitement.php">
+				<p>
+					<button class="bouton" type="button">Rechercher
+					</button>
+					<input class="champ" type="text" id="pseudo" name="pseudo" maxlenght="20" placeholder="Marseille, France"/>
+				</p>
+			</form>
+
+			<section class="filter">
+				<h2>Filtres</h2>
+				<ul class="filters_list">
+				  <li class="elements flex">
+					<i class="fas fa-money-bill-wave"></i>
+					<a href="#" class="space_objet_word">Économique</a>
+				  </li>
+				  <li class="elements flex">
+					<i class="fas fa-child"></i>
+					<a href="#" class="space_objet_word">Familial</a>
+				  </li>
+				  <li class="elements flex">
+					<i class="fas fa-heart"></i>
+					<a href="#" class="space_objet_word">Romantique</a>
+				  </li>
+				  <li class="elements flex">
+					<i class="fas fa-dog"></i>
+					<a href="#" class="space_objet_word">Animaux autorisés</a>
+				  </li>
+				</ul>
 		</header>
 
 		<section>
-			<div class="conteneur1">
      			<div class="hébergement item"></div>
      			<div class="populaires item"></div>
-			</div>
 		</section>
 
 		<section>
-			<div class="conteneur3">
+			<div class="activités">
 			</div>
 		</section>
 
 		<footer>
-			<div class="conteneurfooter">
+			<div class="conteneurfooter"></div>
 		</footer>
 	</body>
 </html>
