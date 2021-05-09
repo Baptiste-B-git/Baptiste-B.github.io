@@ -11,6 +11,7 @@ body {
 
 h1,
 h2,
+h3,
 p,
 ul,
 input
@@ -24,12 +25,17 @@ input
 h1 {
   font-size: 1rem;
   margin-left: 100px;
+  margin-top: 80px;
 }
 
-p {
+p { /*En plein centre*/
   margin-left: 100px;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   line-height: 0.1;
+}
+
+.p2{ /*Plus de 500 logements*/
+  line-height: 2.5em;
 }
 
 /*Start Navigation*/
@@ -83,7 +89,7 @@ input {
   width: 100px;
   border-radius: 10px;
   float: right;
-  margin-right: 1630px;
+  margin-right: 1540px;
   color: white;
   background-color: #0065fc;
 }
@@ -111,6 +117,11 @@ h2
 }
 /*End Filtres*/
 
+.infos{
+  height: 50px;
+  width: 50px;
+}
+
 /*End Header*/
 /*End Header*/
 /*End Header*/
@@ -124,7 +135,7 @@ h2
   display: inline-block;
   background-color: #f2f2f2;
   margin-left: 100px;
-  height: 500px;
+  height: 550px;
   width: 1070px;
 }
 
@@ -133,7 +144,7 @@ h2
   background-color: #f2f2f2;
   margin-right: 100px;
   margin-left: 100px;
-  height: 500px;
+  height: 550px;
   width: 520px;
 }
 
