@@ -2,6 +2,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  font-family: "Raleway-Medium";
 }
 
 @font-face {
@@ -9,23 +11,11 @@ body {
   src: url("fonts/Raleway-Medium.ttf");
 }
 
-h1,
-h2,
-h3,
-p,
-ul,
-input
- {
-  font-family: "Raleway-Medium";
-}
-
-/*Start Header*/
-/*Start Header*/
 /*Start Header*/
 h1 {
   font-size: 1rem;
   margin-left: 100px;
-  margin-top: 80px;
+  margin-top: 25px;
 }
 
 p { /*En plein centre*/
@@ -34,8 +24,14 @@ p { /*En plein centre*/
   line-height: 0.1;
 }
 
-.p2{ /*Plus de 500 logements*/
-  line-height: 2.5em;
+.reservia{
+  flex: auto;
+  display: flex;
+  padding: 0px;
+  margin-left: 100px;
+  margin-top: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 /*Start Navigation*/
@@ -44,8 +40,7 @@ nav ul {
   display: flex;
   float: right;
   margin-right: 100px;
-  margin-top: 25px;
-  height: 0px;
+  margin-top: 0px;
 }
 
 nav li {
@@ -55,14 +50,17 @@ nav li {
 nav a {
   font-size: 0.9em;
   color: #181818;
-  padding-bottom: 3px;
   text-decoration: none;
-  padding: 1.5rem;
+  padding: 1rem;
+  padding-top: 3rem;
 }
 
 nav a:hover {
   color: #0065fc;
   border-top: 3px solid#0065FC;
+}
+.sinscrire{
+  color: #0065fc;
 }
 /*End Navigation*/
 
@@ -70,11 +68,7 @@ nav a:hover {
 #pseudo::placeholder {
   color: black;
   font-weight: bold;
-  font-size: 0.7rem;
-}
-
-input {
-  border-radius: 10px;
+  font-size: 0.9rem;
 }
 
 .champ {
@@ -83,10 +77,21 @@ input {
   width: 150px;
 }
 
+input{
+  border-color: #F2F2F2;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-right: none;
+  border-left: none;
+}
+
 .bouton {
   margin-top: 10px;
   height: 30px;
   width: 100px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
   border-radius: 10px;
   float: right;
   margin-right: 1540px;
@@ -94,6 +99,41 @@ input {
   background-color: #0065fc;
 }
 /*End Champ de recherche*/
+
+/*TEST Champ de recherche*/
+.search_bloc {
+  margin-left: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+i.fas.fa-map-marker-alt {
+  background-color: #F2F2F2;
+  padding: 16px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 20px;
+}
+
+input{
+  border-top: 2px solid #F2F2F2;
+  border-bottom: 2px solid #F2F2F2;
+  border-right: none;
+  border-left: none;
+}
+
+button {
+  background-color: #0065FC;
+  color: white;
+  border-color: #0065FC;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 13px;
+  font-weight: lighter;
+  width: 100px;
+}
+/*TEST Champ de recherche*/
+
 
 /*Start Filtres*/
 h2
@@ -113,12 +153,35 @@ h2
 
 .space_objet_word
 {
-  text-decoration: none; color: #181818; border: 2px solid; border-color: #f2f2f2; border-radius: 20px; padding: 6px;
+  text-decoration: none; color: #181818; border: 2px solid; border-color: #f2f2f2; padding: 8px;
+  font-size: 0.9rem;
+  border-left: none;
+  padding-right: 1rem;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+i.fas.fa-money-bill-wave, i.fas.fa-child, i.fas.fa-heart, i.fas.fa-dog {
+  border-radius: 50px;
+  color: #0065FC;
+  background-color: #DEEBFF;
+  padding: 15px;
+  padding-top: 8px;
+  padding-right: 22px;
+  padding-bottom: 10px;
 }
 /*End Filtres*/
 
-/*End Header*/
-/*End Header*/
+/*Start info*/
+.infos {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.p2{
+  line-height: 2.5em;
+}
+/*end info*/
 /*End Header*/
 
 /*Start Section*/
@@ -132,6 +195,12 @@ h2
   margin-left: 100px;
   height: 550px;
   width: 1070px;
+}
+
+.texte_hébergements
+{
+  padding-left: 50px;
+  padding-top: 20px;
 }
 
 .populaires {
@@ -149,15 +218,15 @@ h2
   margin-top: 50px;
   margin-right: 100px;
   margin-left: 100px;
+  margin-bottom: 50px;
 }
 /*End Section*/
 
 /*Start Footer*/
 .conteneurfooter {
-  background-color: #f2f2f2;
-  margin-top: 50px;
-  height: 170px;
-  bottom: 0;
   width: 100%;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  height: 150px;
 }
 /*End Footer*

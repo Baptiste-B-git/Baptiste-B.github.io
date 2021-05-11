@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8"/>
 		<title>Reservia</title>
-		<link rel="stylesheet" type="text/css" href="P2style.css">
+		<link rel="stylesheet" type="text/css" href="P2style.css" media="all">
 	</head>
 
 	<body>
@@ -11,11 +12,12 @@
 				<ul>
 					<li><a href="#">Hébergements</a></li>
 					<li><a href="#">Activités</a></li>
-					<li><a href="#">S'inscrire</a></li>
+					<li class="sinscrire"><a href="#">S'inscrire</a></li>
 				</ul>
 			</nav>
 			
-			<img src="images/reservia.jpg" alt="Logo de Zozor" />
+			<div class="reservia"><img src="images/reservia.jpg" alt="reservia" />
+			</div>
 
 			<h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
             <p>En plein centre ville ou en pleine nature</p> 
@@ -28,34 +30,48 @@
 				</p>
 			</form>
 
+			<div class="search_bloc">
+				<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+				<input type="text" placeholder="Marseille,France">
+				<button class="button" type="button">Rechercher</button>
+			</div>
+
+			<div class="info">
+				<i class="fas fa-info info" aria-hidden="true"></i>
+
+			</div>
+
+
 			<section class="filter">
 				<h2>Filtres</h2>
 				<ul class="filters_list">
 				  <li class="elements flex">
 					<i class="fas fa-money-bill-wave"></i>
-					<a href="#" class="space_objet_word">Économique</a>
+					<a href="#" class="space_objet_word"><strong>Économique</strong></a>
 				  </li>
 				  <li class="elements flex">
 					<i class="fas fa-child"></i>
-					<a href="#" class="space_objet_word">Familial</a>
+					<a href="#" class="space_objet_word"><strong>Familial</strong></a>
 				  </li>
 				  <li class="elements flex">
 					<i class="fas fa-heart"></i>
-					<a href="#" class="space_objet_word">Romantique</a>
+					<a href="#" class="space_objet_word"><strong>Romantique</strong></a>
 				  </li>
 				  <li class="elements flex">
 					<i class="fas fa-dog"></i>
-					<a href="#" class="space_objet_word">Animaux autorisés</a>
+					<a href="#" class="space_objet_word"><strong>Animaux autorisés</strong></a>
 				  </li>
 				</ul>
-
+				
+			<div class="info">
+				<i class="fas fa-info info" aria-hidden="true"></i>
 				<p class="p2">Plus de 500 logements sont disponibles dans cette ville</p>
+			</div>
 		</header>
-
-		<section>
-     			<div class="hébergement item"></div>
-     			<div class="populaires item"></div>
-		</section>
+		<section class="hébergement item">
+			<h3 class="texte_hébergements">Hébergements à Marseille</h3></section>
+				
+     	<section class="populaires item"></section>
 
 		<section>
 			<div class="activités">
