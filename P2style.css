@@ -184,37 +184,124 @@ i.fas.fa-money-bill-wave, i.fas.fa-child, i.fas.fa-heart, i.fas.fa-dog {
 /*end info*/
 /*End Header*/
 
-/*Start Section*/
-.item {
-  border-radius: 20px;
-}
 
-.hébergement {
-  display: inline-block;
-  background-color: #f2f2f2;
-  margin-left: 100px;
-  height: 550px;
-  width: 1070px;
-}
-
-.texte_hébergements
-{
-  padding-left: 50px;
-  padding-top: 20px;
-}
-
-.populaires {
-  display: inline-block;
-  background-color: #f2f2f2;
+/*TEST section*/
+#container {
+  display: flex;
+  justify-content: flex-start;
   margin-right: 100px;
   margin-left: 100px;
-  height: 550px;
-  width: 520px;
 }
 
-.activités {
+.element{
+  height: 550px;
+}
+
+.element:nth-child(1) {
+  background-color: #F2F2F2;
+  margin-right: 100px;
+  border-radius: 20px;
+  width: 62%;
+}
+
+.text_h3 {
+  font-size: 1.1em;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.article_1{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-right: 30px;
+  margin-left: 30px;
+  height: 390px;
+}
+
+.fig{
+  background-color: white;
+  border-radius: 20px;
+  width:307px;
+  height: 182px;
+  margin: 0;
+}
+
+.fig:nth-child(1){
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+.fig:nth-child(2){
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.fig:nth-child(3){
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
+}
+.fig:nth-child(4){
+  margin-left: 0;
+  margin bottom:0;
+}
+.fig:nth-child(5){
+}
+.fig:nth-child(6){
+  margin-right: 0;
+}
+
+.afficher{/*texte "afficher plus"*/
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.element:nth-child(2) {
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  width: 33%;
+}
+
+.text_h4{
+  font-size: 1.1em;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.article_2{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 420px;
+}
+
+.fig_a2{
+  background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 20px;
+  height: 110px;
+
+}
+
+.fig_a2:nth-child(1){
+  margin-top: 0;
+}
+.fig_a2:nth-child(2){
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.fig_a2:nth-child(3){
+margin-bottom: 0;
+}
+
+/*TEST section*/
+
+.activités{
   border: 2px black solid;
   height: 400px;
+  width: 80%;
   margin-top: 50px;
   margin-right: 100px;
   margin-left: 100px;
@@ -228,5 +315,27 @@ i.fas.fa-money-bill-wave, i.fas.fa-child, i.fas.fa-heart, i.fas.fa-dog {
   margin: 0 auto;
   background-color: #f2f2f2;
   height: 150px;
+  padding-left: 60px;
 }
+
+.puce_footer
+{
+  
+}
+
+.puce_footer:nth-child(1){
+
+}
+.puce_footer:nth-child(2){
+
+}
+.puce_footer:nth-child(2){
+
+}
+
+ul{
+  list-style-type: none;
+}
+
+
 /*End Footer*
