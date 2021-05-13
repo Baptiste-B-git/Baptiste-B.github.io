@@ -22,25 +22,11 @@
 			<h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
             <p>En plein centre ville ou en pleine nature</p> 
 
-			<form method="POST" action="traitement.php">
-				<p>
-					<button class="bouton" type="button">Rechercher
-					</button>
-					<input class="champ" type="text" id="pseudo" name="pseudo" maxlenght="20" placeholder="Marseille, France"/>
-				</p>
-			</form>
-
 			<div class="search_bloc">
 				<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
 				<input type="text" placeholder="Marseille,France">
 				<button class="button" type="button">Rechercher</button>
 			</div>
-
-			<div class="info">
-				<i class="fas fa-info info" aria-hidden="true"></i>
-
-			</div>
-
 
 			<section class="filter">
 				<h2>Filtres</h2>
@@ -63,18 +49,25 @@
 				  </li>
 				</ul>
 				
-			<div class="info">
-				<i class="fas fa-info info" aria-hidden="true"></i>
+			<div class="info"><i class="fas fa-info-circle"></i></div>
 				<p class="p2">Plus de 500 logements sont disponibles dans cette ville</p>
 			</div>
 		</header>
-
 
 		<div id="container">
 			<div class="element">
 				<h3 class="text_h3">Hébergements à Marseille</h3>
 				<article class="article_1">
-					<figure class="fig"></figure>
+					<figure class="fig">
+						<img class="photo" src="images/img_1.jpg" alt="Auberge la cannebière">
+						<figcaption class="text_card">
+							<span class="name_hostel">Auberge la Cannebière</span></br>
+							<span class="light_text">Nuit à partir de</span>
+							<span class="prices">25</span>
+							<span class="symbol">€</span></br>
+						</figcaption>
+					</figure>
+					
 					<figure class="fig"></figure>
 					<figure class="fig"></figure>
 					<figure class="fig"></figure>
@@ -83,8 +76,6 @@
 				</article>
 				<p class="afficher">Afficher plus</p></div>
 
-
-
 			<div class="element">
 				<h4 class="text_h4">Les plus populaires</h4>
 				<article class="article_2">
@@ -92,15 +83,27 @@
 					<figure class="fig_a2"></figure>
 					<figure class="fig_a2"></figure>
 				</article>
-			
-			
 			</div>
 		</div>
 
-		<section>
-			<div class="activités">
+		<div id="section_3">
+			<h5 class="title_marseille">Activités à Marseille</h5>
+			<div class="wrapper">
+				<div class="one"><img class="photo_section_3" src="images/img_11.jpg" alt="Vieux port">
+					<figcaption class="text_long_card_section_3">Vieux port</figcaption>
+				</div>
+				<div class="two"><img class="photo_small_section_3" src="images/img_12.jpg" alt="Fort de Pomègues">
+					<figcaption class="text_small_card_section_3">Fort de Pomègues</figcaption></div>
+				<div class="three"><img class="photo_small_section_3" src="images/img_13.jpg" alt="Îles du Frioul">
+					<figcaption class="text_small_card_section_3">Îles du Frioul</figcaption></div>
+				<div class="four"><img class="photo_section_3" src="images/img_14.jpg" alt="Parc National">
+					<figcaption class="text_long_card_section_3">Parc National des Calanques</figcaption></div>
+				<div class="five"><img class="photo_small_section_3" src="images/img_15.jpg" alt="Notre-Dame-de-la-Garde">
+					<figcaption class="text_small_card_section_3">Notre-Dame-de-la-Garde</figcaption></div>
+				<div class="six"><img class="photo_small_section_3" src="images/img_16.jpg" alt="Parc Longchamp">
+					<figcaption class="text_small_card_section_3">Parc Longchamp</figcaption></div>
 			</div>
-		</section>
+		</div>
 
 		<footer>
 			<div class="conteneurfooter">
@@ -113,7 +116,7 @@
 					</ul>
 
 					<ul>
-						<li><strong>hébergements</strong></li>
+						<li><strong>Nos hébergements</strong></li>
 						<li>Charte qualité</li>
 						<li>Soumettre votre hôtel</li>
 					</ul>
@@ -125,7 +128,6 @@
 					</ul>
 				</div>
 			</div>
-
 		</footer>
 	</body>
 </html>
