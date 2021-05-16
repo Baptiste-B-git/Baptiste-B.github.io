@@ -21,7 +21,7 @@ h1 {
 p { /*En plein centre*/
   margin-left: 100px;
   font-size: 0.9rem;
-  line-height: 0.1;
+  line-height: 0.5rem;
 }
 
 .reservia{
@@ -67,6 +67,7 @@ nav a:hover {
 /* Start Champ de recherche*/
 .search_bloc {
   margin-left: 100px;
+  margin-bottom: 30px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -137,100 +138,117 @@ i.fas.fa-money-bill-wave, i.fas.fa-child, i.fas.fa-heart, i.fas.fa-dog {
 /*End Filtres*/
 
 /*Start info*/
-.info
-  width: 10px;
-  height: 20px;
-}
-
 .p2{
-  line-height: 2.5em;
+  line-height: 4em;
 }
 /*end info*/
 /*End Header*/
 
 
-/*section*/
-#container {
+/*Start Section 1*/
+#container_central {
   display: flex;
   justify-content: flex-start;
   margin-top: 30px;
+  margin-bottom: 30px;
   margin-right: 100px;
   margin-left: 100px;
 }
-
-.element{
-  height: 580px;
+.bloc_grey{
+  height: 550px;
 }
 
-.element:nth-child(1) {
+.bloc_grey:nth-child(1) {
   background-color: #F2F2F2;
   margin-right: 100px;
   border-radius: 20px;
   width: 62%;
 }
-
-.text_h3 {
-  font-size: 1.1em;
+.title_h6{
   margin-top: 30px;
-  margin-left: 30px;
-}
-
-.article_1{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin-right: 30px;
-  margin-left: 30px;
-  height: 390px;
-}
-
-.fig{
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  background-color: white;
-  border-radius: 20px;
-  width:285px;
-  height: 182px;
-  margin: 0;
-}
-
-.fig:nth-child(1){
-  margin-top: 0;
-  margin-left: 0;
-  margin-bottom: 25px;
-}
-.fig:nth-child(2){
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-.fig:nth-child(3){
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 25px;
-}
-.fig:nth-child(4){
-  margin-left: 0;
-  margin bottom: 0;
-}
-.fig:nth-child(5){
-}
-.fig:nth-child(6){
-  margin-right: 0;
-}
-
-.afficher{/*texte "afficher plus"*/
+  margin-left: 35px;
+  margin-bottom: 20px;
   font-weight: 700;
-  margin-top: 60px;
-  margin-left: 30px;
+  font-size: 1.1em;
 }
 
-.photo{
+.bloc_white_1 {
+  margin-right: 35px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  grid-auto-rows: repeat(2, 1fr);
+}
+
+.photo_section_1{
   height:60%;
   width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   object-fit: cover;
+}
+.figure_cannebière {
+  background-color: white;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  grid-column: 1/1;
+  grid-row: 1/3;
+}
+.figure_port {
+  background-color: white;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+.figure_mouettes {
+  background-color: white;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  grid-column: 3;
+  grid-row: 1/3;
+}
+.figure_mer {
+  background-color: white;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  grid-column: 1/1;
+  grid-row: 3 / 5;
+}
+.figure_panier {
+  background-color: white;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  grid-column: 2;
+  grid-row: 3/5;
+}
+
+.figure_amina {
+  background-color: white;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  grid-column: 3;
+  grid-row: 3/5;
 }
 
 .text_card{
@@ -251,13 +269,19 @@ i.fas.fa-money-bill-wave, i.fas.fa-child, i.fas.fa-heart, i.fas.fa-dog {
   font-size: 12px;
   font-weight: 700;
 }
+.title_h7{
+  margin-left: 35px;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+/*End Section 1*/
 
-.element:nth-child(2) {
+/*Start Section 2*/
+.bloc_grey:nth-child(2) {
   background-color: #F2F2F2;
   border-radius: 20px;
   width: 33%;
 }
-
 .text_h4{
   font-size: 1.1em;
   margin-top: 30px;
@@ -281,9 +305,6 @@ i.fas.fa-money-bill-wave, i.fas.fa-child, i.fas.fa-heart, i.fas.fa-dog {
   object-fit: cover;
 }
 
-.text_card_article_2{
-
-}
 .name_hostel_article_2{
   margin-left: 15px;
   font-size: 13px;
@@ -304,14 +325,13 @@ i.fas.fa-money-bill-wave, i.fas.fa-child, i.fas.fa-heart, i.fas.fa-dog {
 
 .fig_a2{
   background-color: white;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-left: 0;
   margin-right: 0;
   border-radius: 20px;
   height: 100px;
-
 }
 
 .fig_a2:nth-child(1){
@@ -324,8 +344,9 @@ i.fas.fa-money-bill-wave, i.fas.fa-child, i.fas.fa-heart, i.fas.fa-dog {
 .fig_a2:nth-child(3){
 margin-bottom: 0;
 }
+/*End Section 2*/
 
-/*Section 3*/
+/*Start Section 3*/
 #section_3{
   margin-top: 50px;
   margin-right: 100px;
@@ -411,78 +432,7 @@ margin-bottom: 0;
   grid-column: 4;
   grid-row: 3/5;
 }
-/*Section 3*/
-
-/*TEST Section 1*/
-#container_central {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-.bloc_grey{
-  height: 550px;
-}
-
-.bloc_grey:nth-child(1) {
-  background-color: #F2F2F2;
-  margin-right: 100px;
-  border-radius: 20px;
-  width: 62%;
-}
-
-.bloc_white_1 {
-  border: 2px solid black;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1px;
-  grid-auto-rows: minmax(100px, auto);
-}
-.figure_one {
-  background-color: blue;
-  grid-column: 1/2;
-  grid-row: 1/3;
-}
-.figure_two {
-  background-color: green;
-  grid-column: 2;
-  grid-row: 1 / 3;
-}
-.figure_three {
-  background-color: red;
-  grid-column: 1/1;
-  grid-row: 3 / 5;
-}
-.figure_four {
-  background-color: pink;
-  grid-column: 2;
-  grid-row: 3/5;
-}
-.figure_five {
-  background-color: yellow;
-  grid-column: 3;
-  grid-row: 1/3;
-}
-.figure_six {
-  background-color: grey;
-  grid-column: 3;
-  grid-row: 3/5;
-}
-/*TEST Section 1*/
-
-
-
-
-/*TEST Section 2*/
-.bloc_grey:nth-child(2) {
-  background-color: #F2F2F2;
-  border-radius: 20px;
-  width: 33%;
-}
-
-/*TEST Section 2*/
+/*End Section 3*/
 
 /*Start Footer*/
 .conteneurfooter {
@@ -499,17 +449,6 @@ margin-bottom: 0;
   padding-left: 4rem;
   height: 100%;
   line-height: 1.8;
-}
-
-.puce_footer:nth-child(1){
-  
-}
-.puce_footer:nth-child(2){
-
-}
-.puce_footer:nth-child(2){
-
-
 }
 
 ul{
