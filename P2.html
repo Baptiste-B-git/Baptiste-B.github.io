@@ -2,38 +2,43 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Reservia</title>
 		<link rel="stylesheet" type="text/css" href="P2style.css" media="all">
+		<link rel="stylesheet" media="screen and (max_width: 1024px)" href="p2_petite_resolution.css">
 	</head>
-
 	<body>
-        <header>
+        
 <!--Start Navigation-->
+		<div class="main">	
 			<nav>
 				<ul>
-					<li><a href="#hébergements">Hébergements</a></li>
-					<li><a href="#activités">Activités</a></li>
-					<li class="sinscrire"><a href="#">S'inscrire</a></li>
+					<li class="reservia">
+						<img class="reservia_img" src="images/reservia.jpg" alt="reservia" />
+					</li>
+					<li><a class="anchor" href="#hébergements">Hébergements</a></li>
+					<li><a class="anchor" href="#activités">Activités</a></li>
+					<li class="sinscrire"><strong>S'inscrire</strong></a></li>
 				</ul>
 			</nav>
+		</div>
 <!--End Navigation-->
 
 <!--Start Header-->
-			<div class="reservia"><img src="images/reservia.jpg" alt="reservia" />
-			</div>
+		<header>
+			<div class="principal_flex_header">
+				<h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
+           	 	<p class="p1">En plein centre ville ou en pleine nature</p> 
 
-			<h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
-            <p>En plein centre ville ou en pleine nature</p> 
+				<div class="search_bloc">
+					<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+					<input type="text" placeholder="Marseille,France">
+					<button class="button" type="button">Rechercher</button>
+				</div>
 
-			<div class="search_bloc">
-				<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-				<input type="text" placeholder="Marseille,France">
-				<button class="button" type="button">Rechercher</button>
-			</div>
-
-			<section class="filter">
-				<h2>Filtres</h2>
-				<ul class="filters_list">
+				<section class="filter">
+					<h2>Filtres</h2>
+					<ul class="filters_list">
 				  <li class="elements flex">
 					<i class="fas fa-money-bill-wave"></i>
 					<a href="#" class="space_objet_word"><strong>Économique</strong></a>
@@ -50,18 +55,19 @@
 					<i class="fas fa-dog"></i>
 					<a href="#" class="space_objet_word"><strong>Animaux autorisés</strong></a>
 				  </li>
-				</ul>
+					</ul>
 				
-			<div class="info"><i class="fas fa-info-circle"></i></div>
-				<p class="p2">Plus de 500 logements sont disponibles dans cette ville</p>
+				<div class="info"><i class="fas fa-info-circle"></i></div>
+					<p class="p2">Plus de 500 logements sont disponibles dans cette ville</p>
+				</div>
 			</div>
 		</header>
 <!--End Header-->
 
-<!--TEST Section 1-->
+<!--Section 1-->
 <div id="container_central">
 	<div class="bloc_grey">
-		<h6 id="hébergements" class="title_h6">Hébergements à Marseille</h6>
+		<h3 id="hébergements" class="title_hebergements">Hébergements à Marseille</h3>
 		<div class="bloc_white_1">
 			<div class="figure_cannebière"><img class="photo_section_1" src="images/img_1.jpg" alt="Auberge la cannebière">
 				<figcaption class="text_card">
@@ -109,11 +115,11 @@
 		</div>
 		<h7 class="title_h7">Afficher plus</h7>
 	</div>
-<!--TEST End Section 1-->
+<!--End Section 1-->
 
-<!--TEST Start Section 2-->
+<!--Start Section 2-->
 	<div class="bloc_grey">
-		<h4 class="text_h4">Les plus populaires</h4>
+		<h4 class="title_populaires">Les plus populaires</h4>
 		<article class="article_2">
 			<figure class="fig_a2">
 				<img class="photo_article_2" src="images/img_7.jpg" alt="Hôtel Le soleil du matin">
@@ -142,11 +148,11 @@
 		</article>
 	</div>
 </div>
-<!--TEST End Section 2-->
+<!--End Section 2-->
 
 <!--Start Section 3-->
 		<div id="section_3">
-			<h5 id="activités" class="title_marseille">Activités à Marseille</h5>
+			<h5 id="activités" class="title_activites">Activités à Marseille</h5>
 			<div class="wrapper">
 				<div class="one"><img class="photo_section_3" src="images/img_10.jpg" alt="Vieux port">
 					<figcaption class="text_long_card_section_3">Vieux port</figcaption>
