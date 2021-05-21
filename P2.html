@@ -4,7 +4,9 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Reservia</title>
-		<link rel="stylesheet" type="text/css" href="P2style.css" media="all">
+		<link rel="stylesheet" type="text/css" href="P2style.css"/>
+		<link rel="stylesheet" media="screen and (max-width: 1024px" href="petite_resolution.css"/>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</head>
 	<body>		
 <!--Start Navigation-->
@@ -34,7 +36,7 @@
 					<button class="button" type="button">Rechercher</button>
 				</div>
 
-				<section class="filter">
+				<div class="filter">
 					<h2>Filtres</h2>
 					<ul class="filters_list">
 				  <li class="elements flex">
@@ -54,8 +56,9 @@
 					<a href="#" class="space_objet_word"><strong>Animaux autorisés</strong></a>
 				  </li>
 					</ul>
-				
-				<div class="info"><i class="fas fa-info-circle"></i></div>
+				</div>
+				<div class="infos">
+					<i id="info" class="fas fa-info info" aria-hidden="true"></i>
 					<p class="p2">Plus de 500 logements sont disponibles dans cette ville</p>
 				</div>
 			</div>
@@ -63,8 +66,8 @@
 <!--End Header-->
 
 <!--Section 1-->
-<div id="container_central">
-	<div class="bloc_grey">
+<div id="Section_hostel">
+	<div class="Section_hostel_left">
 		<h3 id="hébergements" class="title_hebergements">Hébergements à Marseille</h3>
 		<div class="bloc_white_hebergement_top">
 			<div class="figure_cannebière"><img class="photo_section_1" src="images/img_1.jpg" alt="Auberge la cannebière">
@@ -73,6 +76,11 @@
 					<span class="light_text">Nuit à partir de</span>
 					<span class="prices">25</span>
 					<span class="symbol">€</span></br>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star grey_star" aria-hidden="true"></i>
 				</figcaption>
 			</div>
 			<div class="figure_port"><img class="photo_section_1" src="images/img_2.jpg" alt="Auberge la cannebière">
@@ -81,6 +89,11 @@
 					<span class="light_text">Nuit à partir de</span>
 					<span class="prices">62</span>
 					<span class="symbol">€</span></br>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
 				</figcaption></div>
 			<div class="figure_mouettes"><img class="photo_section_1" src="images/img_3.jpg" alt="Auberge la cannebière">
 				<figcaption class="text_card">
@@ -88,6 +101,11 @@
 					<span class="light_text">Nuit à partir de</span>
 					<span class="prices">76</span>
 					<span class="symbol">€</span></br>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star grey_star" aria-hidden="true"></i>
 				</figcaption></div>
 			<div class="figure_mer"><img class="photo_section_1" src="images/img_4.jpg" alt="Auberge la cannebière">
 				<figcaption class="text_card">
@@ -95,6 +113,11 @@
 					<span class="light_text">Nuit à partir de</span>
 					<span class="prices">46</span>
 					<span class="symbol">€</span></br>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star grey_star" aria-hidden="true"></i>
+					<i class="fas fa-star grey_star" aria-hidden="true"></i>
 				</figcaption></div>
 			<div class="figure_panier"><img class="photo_section_1" src="images/img_5.jpg" alt="Auberge la cannebière">
 				<figcaption class="text_card">
@@ -102,6 +125,11 @@
 					<span class="light_text">Nuit à partir de</span>
 					<span class="prices">23</span>
 					<span class="symbol">€</span></br>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star grey_star" aria-hidden="true"></i>
 				</figcaption></div>
 			<div class="figure_amina"><img class="photo_section_1" src="images/img_6.jpg" alt="Auberge la cannebière">
 				<figcaption class="text_card">
@@ -109,6 +137,11 @@
 					<span class="light_text">Nuit à partir de</span>
 					<span class="prices">96</span>
 					<span class="symbol">€</span></br>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
 				</figcaption></div>
 		</div>
 		<h7 class="title_h7">Afficher plus</h7>
@@ -116,34 +149,55 @@
 <!--End Section 1-->
 
 <!--Start Section 2-->
-	<div class="bloc_grey">
-		<h4 class="title_populaires">Les plus populaires</h4>
-		<article class="article_2">
-			<figure class="fig_a2">
-				<img class="photo_article_2" src="images/img_7.jpg" alt="Hôtel Le soleil du matin">
-				<figcaption class="text_card_article_2">
-					<span class="name_hostel_article_2">Hôtel Le soleil du matin</span></br>
-					<span class="light_text_article_2">Nuit à partir de</span>
-					<span class="prices_article_2">128</span>
-					<span class="symbol_article_2">€</span></br>
-				</figcaption></figure>
-			<figure class="fig_a2">
-				<img class="photo_article_2" src="images/img_8.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
-				<figcaption class="text_card_article_2">
-					<span class="name_hostel_article_2">Au coeur de l'eau Chambres d'hôtes</span></br>
-					<span class="light_text_article_2">Nuit à partir de</span>
-					<span class="prices_article_2">71</span>
-					<span class="symbol_article_2">€</span></br>
-				</figcaption></figure>
-			<figure class="fig_a2">
-				<img class="photo_article_2" src="images/img_9.jpg" alt="Hôtel Tout bleu et Blanc">
-				<figcaption class="text_card_article_2">
-					<span class="name_hostel_article_2">Hôtel Tout bleu et Blanc</span></br>
-					<span class="light_text_article_2">Nuit à partir de</span>
-					<span class="prices_article_2">68</span>
-					<span class="symbol_article_2">€</span></br>
-				</figcaption></figure>
-		</article>
+	<div class="Section_hostel_right"><h4 class="title_populaires">Les plus populaires</h4>
+		<div class="figure_Section_hostel_right">
+			<img class="photo_article_2" src="images/img_7.jpg" alt="Hôtel Le soleil du matin">
+			<figcaption class="text_card_article_2">
+				<span class="name_hostel_article_2">Hôtel Le soleil du matin</span></br>
+				<span class="light_text_article_2">Nuit à partir de</span>
+				<span class="prices_article_2">128</span>
+				<span class="symbol_article_2">€</span></br>
+				<br>
+				<br>
+				<br>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star" aria-hidden="true"></i>
+			</figcaption></div>
+		<div class="figure_Section_hostel_right">
+			<img class="photo_article_2" src="images/img_8.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+			<figcaption class="text_card_article_2">
+				<span class="name_hostel_article_2">Au coeur de l'eau Chambres d'hôtes</span></br>
+				<span class="light_text_article_2">Nuit à partir de</span>
+				<span class="prices_article_2">71</span>
+				<span class="symbol_article_2">€</span>
+				<br>
+				<br>
+				<br>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star grey_star" aria-hidden="true"></i>
+			</figcaption></div>
+		<div class="figure_Section_hostel_right">
+			<img class="photo_article_2" src="images/img_9.jpg" alt="Hôtel Tout bleu et Blanc">
+			<figcaption class="text_card_article_2">
+				<span class="name_hostel_article_2">Hôtel Tout bleu et Blanc</span></br>
+				<span class="light_text_article_2">Nuit à partir de</span>
+				<span class="prices_article_2">68</span>
+				<span class="symbol_article_2">€</span></br>
+				<br>
+				<br>
+				<br>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star" aria-hidden="true"></i>
+				<i class="fas fa-star grey_star" aria-hidden="true"></i>
+			</figcaption></div>
 	</div>
 </div>
 <!--End Section 2-->
