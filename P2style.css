@@ -334,6 +334,7 @@ i.fas.fa-dog {
   margin-bottom: 0px;
   font-size: 1.1em;
 }
+
 .figure_Section_hostel_right {
   height: 120px;
   background: white;
@@ -533,6 +534,7 @@ i.fas.fa-dog {
 
 /*Start Footer*/
 .conteneurfooter {
+  border: 2px solid black;
   width: 100%;
   margin: 0 auto;
   background-color: #f2f2f2;
