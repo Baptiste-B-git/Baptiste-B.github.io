@@ -90,8 +90,8 @@ i.fas.fa-map-marker-alt {
 }
 
 input {
-  border-top: 3px solid #f2f2f2;
-  border-bottom: 3px solid #f2f2f2;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
   border-right: none;
   border-left: none;
 }
@@ -123,7 +123,14 @@ h2 {
 .filters_list {
   list-style-type: none;
   display: flex;
+  justify-content: flex-start;
   margin-top: 20px;
+}
+
+.elements.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .space_objet_word {
@@ -131,25 +138,28 @@ h2 {
   color: #181818;
   border: 2px solid;
   border-color: #f2f2f2;
-  padding: 8px;
+  padding: 10px;
   font-size: 0.9rem;
   border-left: none;
   padding-right: 1rem;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-right: 20px;
 }
 
 i.fas.fa-money-bill-wave,
 i.fas.fa-child,
 i.fas.fa-heart,
 i.fas.fa-dog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50px;
   color: #0065fc;
   background-color: #deebff;
-  padding: 15px;
-  padding-top: 8px;
-  padding-right: 22px;
-  padding-bottom: 10px;
+  height: 40px;
+  width: 40px;
+  margin-right: 0;
 }
 /*End Filtres*/
 
@@ -192,7 +202,8 @@ i.fas.fa-dog {
   background-color: #f2f2f2;
   margin-right: 5%;
   border-radius: 20px;
-  width: 62%;
+  width: 60%;
+  min-width: 650px;
   height: 550px;
 }
 .title_hebergements {
@@ -206,7 +217,7 @@ i.fas.fa-dog {
 .bloc_white_hebergement_top {
   margin-right: 35px;
   margin-left: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
@@ -310,7 +321,7 @@ i.fas.fa-dog {
   font-size: smaller;
   font-weight: 900;
 }
-.title_h7 {
+.title_afficher-plus {
   margin-left: 35px;
   font-weight: 700;
   font-size: 0.9em;
@@ -319,28 +330,49 @@ i.fas.fa-dog {
 
 /*Start Section 2*/
 .Section_hostel_right {
-  max-height: 500px;
-  width: 33%;
-  background-color: #f2f2f2;
-  border-radius: 20px;
   display: grid;
   grid-template-rows: auto;
   justify-content: space-between;
+  max-height: 550px;
+  width: 35%;
+  min-width: 280px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
   gap: 5px;
-  padding: 2%;
 }
+.text_icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px auto;
+  width: 100%;
+  height: 8px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
 .title_populaires {
-  margin-top: 5px;
-  margin-bottom: 0px;
-  font-size: 1.1em;
+  display: block;
+  font-size: 1em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 700;
+}
+.fas.fa-chart-line {
+  float: right;
 }
 
 .figure_Section_hostel_right {
-  height: 120px;
+  height: 130px;
   background: white;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  padding: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5px 0 5px 5px;
 }
 
 .photo_article_2 {
@@ -351,6 +383,8 @@ i.fas.fa-dog {
   width: 35%;
   object-fit: cover;
   margin-right: 15px;
+}
+.text_card_article_2 {
 }
 
 .name_hostel_article_2 {
@@ -533,23 +567,35 @@ i.fas.fa-dog {
 /*TEST Section 3*/
 
 /*Start Footer*/
-.conteneurfooter {
-  border: 2px solid black;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #f2f2f2;
-  height: 60%;
-}
-
-.puce_footer {
+footer {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding-left: 4rem;
-  height: 100%;
-  line-height: 1.8;
+  padding-left: 5rem;
+  background-color: #f2f2f2;
 }
-
 ul {
-  list-style-type: none;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.footer_element--bold {
+  font-weight: bolder;
+  width: 100%;
+}
+.title a,
+.footer_element a,
+.title,
+.footer_element {
+  color: black;
+  text-decoration: none;
+  margin: inherit;
+  width: 100%;
+}
+li {
+  list-style: none;
 }
 /*End Footer*/

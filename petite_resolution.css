@@ -14,6 +14,7 @@
   border-radius: 20px;
   margin-right: 5%;
   width: 100%;
+  min-width: 0px;
   height: auto;
 }
 
@@ -21,8 +22,14 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  gap: 20px;
   margin-right: 5%;
   margin-left: 5%;
+  margin-bottom: 35px;
+}
+.title_hebergements {
+  margin-left: 5%;
+  font-size: 1.4em;
 }
 
 .figure_cannebière {
@@ -80,15 +87,39 @@
   padding-top: 5px;
   padding-right: 5px;
 }
+.title_afficher-plus {
+  margin-left: 5%;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
 /*section left*/
 
 /*section right*/
 .Section_hostel_right {
   order: 1;
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
   border-radius: 0;
   width: 100%;
   height: 550px;
+  padding-left: 0;
+  gap: 2%;
+}
+
+.text_icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px auto;
+  width: 100%;
+  height: 8px;
+}
+
+.title_populaires {
+
 }
 .figure_Section_hostel_right {
   background-color: white;
@@ -97,6 +128,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   margin-right: 5%;
+  margin-left: 5%;
 }
 /*section right*/
 
@@ -214,5 +246,8 @@
 /*TEST Section 3*/
 
 /*Footer*/
-
+footer {
+  display: flex;
+  flex-direction: column;
+}
 /*Footer*/
