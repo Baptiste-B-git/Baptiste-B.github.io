@@ -6,19 +6,26 @@
 		<title>Reservia</title>
 		<link rel="stylesheet" type="text/css" href="P2style.css"/>
 		<link rel="stylesheet" media="screen and (max-width: 1280px" href="petite_resolution.css"/>
+		<link rel="stylesheet" media="screen and (max-width: 420px" href="mini_resolution.css"/>
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</head>
 	<body>		
 <!--Start Navigation-->
 		<div class="main">	
 			<nav>
-				<ul>
+				<ul class="navigation">
 					<li class="reservia">
 						<img class="reservia_img" src="images/reservia.jpg" alt="reservia" />
 					</li>
-					<li><a class="anchor" href="#hébergements">Hébergements</a></li>
-					<li><a class="anchor" href="#activités">Activités</a></li>
-					<li class="sinscrire"><strong>S'inscrire</strong></a></li>
+					<li class="element_accomodation">
+						<a class="anchor" href="#hébergements">Hébergements</a>
+					</li>
+					<li class="element_activities">
+						<a class="anchor" href="#activités">Activités</a>
+					</li>
+					<li class="sinscrire">
+						<strong>S'inscrire</strong></a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -27,13 +34,17 @@
 <!--Start Header-->
 		<header>
 			<div class="principal_flex_header">
-				<h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
+				<h1 class="title_principal">Trouvez votre hébergement pour des vacances de rêve</h1>
            	 	<p class="p1">En plein centre ville ou en pleine nature</p> 
 
 				<div class="search_bloc">
 					<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
 					<input type="text" placeholder="Marseille,France">
-					<button class="button" type="button">Rechercher</button>
+					<button class="button" type="button">
+						<span class="hide">Rechercher</span>
+						<i class="fas fa-search" aria-hidden="true">
+						</i>
+					</button>
 				</div>
 
 				<div class="filter">
@@ -247,7 +258,7 @@
 <!--TEST Section 3-->
 
 <!--Start footer-->
-		<footer>
+		<div class="footer">
 			<ul class="menu_endpage">
 				<li class="footer_element footer_element--bold">
 					<a href="#">A propos</a>
@@ -284,7 +295,7 @@
 					<a href="#">Nous contacter</a>
 				</li>
 			</ul>
-		</footer>
+		</div>
 <!--End footer-->
 	</body>
 </html>

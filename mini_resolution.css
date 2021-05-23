@@ -1,56 +1,36 @@
-/*Start navigation*/
-.reservia {
+/*champ de recherche*/
+.search_bloc{
+  margin-top: 20px;
+}
+
+input {
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  border-right: none;
+  border-left: none;
+  max-width: 840px;
+  width: 80%;
+}
+
+button {
+  border-radius: 10px;
+  width: 35px;
+  height: 48px;
   position: absolute;
-  margin: 0;
-  top: 10px;
-  left: 10px;
+  font-weight: 900;
+  right: 5%;
+  padding-right: 33px;
+  padding-bottom: 13px;
 }
-
-.element_accomodation{
-  padding-top: 70px;
-    padding-bottom: 20px;
-    width:100%;
-    text-align: center;
-    border-bottom: 2px solid #F2F2F2;
+.hide{
+  display: none;
+  width: 0%;
 }
-
-.element_accomodation a:hover{
-  border-bottom: 2px solid#0065FC;
-  padding-bottom: 20px;
+i.fas.fa-search {
+    display: block;
+    color: white;
 }
-.element_activities{
-  padding-top: 70px;
-    padding-bottom: 20px;
-    width: 100%;
-    text-align: center;
-    border-bottom: 2px solid #F2F2F2;
-}
-.element_activities a:hover{
-  border-bottom: 2px solid#0065FC;
-  padding-bottom: 20px;
-}
-
-.navigation{
-  flex-direction: row;
-  padding: 0;
-  margin-right: 0;
-  margin-left: 0;
-
-}
-
-.sinscrire{
-  position: absolute;
-    top: 29px;
-    right: 30px;
-    font-weight: bolder;
-    padding: 0;
-}
-
-nav a:hover {
-  border-top: none;
-}
-/*End navigation*/
-
+/*champ de recherche*/
 
 /*start filtre*/
 .filter {
@@ -69,11 +49,6 @@ nav a:hover {
   margin-top: 10px;
 }
 /*end filtre*/
-
-.infos {
-  margin-top: 20px;
-  }
-
 
 #Section_hostel {
   display: flex;
@@ -323,7 +298,7 @@ nav a:hover {
 /*TEST Section 3*/
 
 /*Footer*/
-.footer {
+footer {
   display: flex;
   flex-direction: column;
 }
