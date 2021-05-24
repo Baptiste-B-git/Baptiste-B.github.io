@@ -1,56 +1,54 @@
-/*Start navigation*/
+/*Start Navigation et logo*/
 .reservia {
   position: absolute;
   margin: 0;
   top: 10px;
-  left: 10px;
+  left: 20px;
 }
 
-.element_accomodation{
+.element_accomodation {
   padding-top: 70px;
-    padding-bottom: 20px;
-    width:100%;
-    text-align: center;
-    border-bottom: 2px solid #F2F2F2;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #f2f2f2;
 }
 
-.element_accomodation a:hover{
+.element_accomodation a:hover {
   border-bottom: 2px solid#0065FC;
   padding-bottom: 20px;
 }
-.element_activities{
+.element_activities {
   padding-top: 70px;
-    padding-bottom: 20px;
-    width: 100%;
-    text-align: center;
-    border-bottom: 2px solid #F2F2F2;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #f2f2f2;
 }
-.element_activities a:hover{
+.element_activities a:hover {
   border-bottom: 2px solid#0065FC;
   padding-bottom: 20px;
 }
 
-.navigation{
+.navigation {
   flex-direction: row;
   padding: 0;
   margin-right: 0;
   margin-left: 0;
-
 }
 
-.sinscrire{
+.sinscrire {
   position: absolute;
-    top: 29px;
-    right: 30px;
-    font-weight: bolder;
-    padding: 0;
+  top: 29px;
+  right: 30px;
+  font-weight: bolder;
+  padding: 0;
 }
 
 nav a:hover {
   border-top: none;
 }
-/*End navigation*/
-
+/*End Navigation et logo*/
 
 /*start filtre*/
 .filter {
@@ -65,16 +63,18 @@ nav a:hover {
   padding: 0;
 }
 
-.elements.flex{
+.elements.flex {
   margin-top: 10px;
 }
 /*end filtre*/
 
+/*start info*/
 .infos {
   margin-top: 20px;
-  }
+}
+/*end info*/
 
-
+/*Start Section*/
 #Section_hostel {
   display: flex;
   justify-content: flex-start;
@@ -83,15 +83,14 @@ nav a:hover {
   margin-bottom: 30px;
   margin-right: 0;
   margin-left: 0;
+  gap: 50px;
 }
-/*section left*/
+
+/*start section 1*/
 .Section_hostel_left {
   order: 2;
   background-color: white;
-  border-radius: 20px;
-  margin-right: 5%;
   width: 100%;
-  min-width: 0px;
   height: auto;
 }
 
@@ -99,232 +98,171 @@ nav a:hover {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 20px;
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 35px;
 }
 .title_hebergements {
   margin-left: 5%;
-  font-size: 1.4em;
+  font-size: 1.3em;
+}
+.photo_section_1 {
+  height: 80%;
 }
 
 .figure_cannebière {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  border-radius: 10px;
-  height: 175px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-right: 5px;
+  height: 350px;
 }
 .figure_port {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  border-radius: 10px;
-  height: 175px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-right: 5px;
+  height: 350px;
 }
 .figure_mouettes {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  border-radius: 10px;
-  height: 175px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-right: 5px;
+  height: 350px;
 }
 .figure_mer {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  border-radius: 10px;
-  height: 175px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-right: 5px;
+  height: 350px;
 }
 .figure_panier {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  border-radius: 10px;
-  height: 175px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-right: 5px;
+  height: 350px;
 }
 
 .figure_amina {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  border-radius: 10px;
-  height: 175px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-right: 5px;
+  height: 350px;
 }
 .title_afficher-plus {
   margin-left: 5%;
-  font-weight: 700;
   font-size: 1.1em;
 }
+/*end section 1*/
 
-/*section left*/
-
-/*section right*/
+/*start section 2*/
 .Section_hostel_right {
   order: 1;
   background-color: #f2f2f2;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   border-radius: 0;
   width: 100%;
   height: 550px;
-  padding-left: 0;
-  gap: 2%;
+  gap: 15px;
 }
 
-.text_icon {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 5px auto;
-  width: 100%;
-  height: 8px;
+.figure_Section_hostel_right {
+  background-color: white;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .title_populaires {
-
+  font-size: 1.3em;
 }
-.figure_Section_hostel_right {
-  background-color: white;
-  border-radius: 20px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-/*section right*/
 
-/*section 3*/
-#section_3 {
-  margin-top: 50px;
-  margin-right: 5%;
-  margin-left: 5%;
-  margin-bottom: 80px;
+.fas.fa-chart-line {
+  font-size: 20px;
+}
+/*end section 2*/
+
+/*start section 3*/
+.title_activites {
+  font-size: 1.3em;
+  margin-bottom: 20px;
 }
 
 .wrapper {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 20px;
+  height: auto;
+  gap: 40px;
 }
 .photo_section_3 {
   width: 100%;
-  height: 100%;
+  height: 350px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   object-fit: cover;
+  margin-bottom: 20px;
+}
+.photo_small_section_3 {
+  width: 100%;
+  height: 350px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.text_long_card_section_3 {
+  margin-bottom: 25px;
+}
+
+.text_small_card_section_3 {
+  margin-bottom: 25px;
 }
 .one {
-    box-shadow: 5px 5px 10px rgb(120, 118, 118);
-    border-radius: 20px;
-    background-color: white;
-
-  }
-  .two {
-    box-shadow: 5px 5px 10px rgb(120, 118, 118);
-    border-radius: 20px;
-    background-color: white;
-    grid-column: 2;
-    grid-row: 1 / 3;
-  }
-  .three {
-    box-shadow: 5px 5px 10px rgb(120, 118, 118);
-    border-radius: 20px;
-    background-color: white;
-    grid-column: 2;
-    grid-row: 3 / 5;
-  }
-  .four {
-    box-shadow: 5px 5px 10px rgb(120, 118, 118);
-    border-radius: 20px;
-    background-color: white;
-    grid-column: 3;
-    grid-row: 1/5;
-  }
-  .five {
-    box-shadow: 5px 5px 10px rgb(120, 118, 118);
-    border-radius: 20px;
-    background-color: white;
-    grid-column: 4;
-    grid-row: 1/3;
-  }
-  .six {
-    box-shadow: 5px 5px 10px rgb(120, 118, 118);
-    border-radius: 20px;
-    background-color: white;
-    grid-column: 4;
-    grid-row: 3/5;
-
-/*section 3*/
-
-/*TEST Section 3*/
-.test_container {
-  border: 2px solid blue;
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  height: 1100px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 40px;
-}
-.item {
+  box-shadow: 5px 5px 10px rgb(120, 118, 118);
   border-radius: 20px;
+  background-color: white;
 }
-.item:nth-child(1) {
-  background-color: rgb(114, 198, 247);
-  height: 18%;
-  margin-bottom: 20px;
+.two {
+  box-shadow: 5px 5px 10px rgb(120, 118, 118);
+  border-radius: 20px;
+  background-color: white;
+  grid-column: 2;
+  grid-row: 1 / 3;
 }
-.item:nth-child(2) {
+.three {
+  box-shadow: 5px 5px 10px rgb(120, 118, 118);
+  border-radius: 20px;
+  background-color: white;
+  grid-column: 2;
+  grid-row: 3 / 5;
 }
-.top {
-  background-color: black;
-  height: 170px;
-  margin-bottom: 20px;
+.four {
+  box-shadow: 5px 5px 10px rgb(120, 118, 118);
+  border-radius: 20px;
+  background-color: white;
+  grid-column: 3;
+  grid-row: 1/5;
 }
-.bot {
-  background-color: blue;
-  height: 170px;
-  margin-bottom: 20px;
+.five {
+  box-shadow: 5px 5px 10px rgb(120, 118, 118);
+  border-radius: 20px;
+  background-color: white;
+  grid-column: 4;
+  grid-row: 1/3;
 }
-.item:nth-child(3) {
-  background-color: rgb(85, 194, 134);
-  height: 20%;
-  margin-bottom: 20px;
+.six {
+  box-shadow: 5px 5px 10px rgb(120, 118, 118);
+  border-radius: 20px;
+  background-color: white;
+  grid-column: 4;
+  grid-row: 3/5;
 }
-.item:nth-child(4) {
-}
-.top_2 {
-  background-color: black;
-  height: 170px;
-  margin-bottom: 20px;
-}
-.bot_2 {
-  background-color: blue;
-  height: 170px;
-}
-/*TEST Section 3*/
+/*End section 3*/
+/*End Section*/
 
-/*Footer*/
+/*Start Footer*/
 .footer {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding-left: 5%;
 }
-/*Footer*/
+.menu_endpage {
+  padding-left: 0;
+}
+/*End Footer*/
