@@ -12,7 +12,6 @@ body {
 }
 
 /*Start Navigation et logo*/
-
 .reservia {
   display: flex;
   flex: auto;
@@ -21,7 +20,6 @@ body {
 .reservia_img {
   height: 100%;
 }
-
 nav ul {
   display: flex;
   flex-direction: row;
@@ -31,14 +29,12 @@ nav ul {
   padding-right: 5%;
   padding-top: 25px;
 }
-
 nav a {
   font-size: 0.9em;
   color: #181818;
   text-decoration: none;
   padding: 2.5rem;
 }
-
 nav a:hover {
   color: #0065fc;
   border-top: 2px solid#0065FC;
@@ -61,9 +57,8 @@ nav a:hover {
   font-size: 1.2rem;
   font-weight: 700;
 }
-
 .p1 {
-  /*En plein centre*/
+  /*En plein centre ville*/
   font-size: 0.9rem;
   margin-top: 0;
 }
@@ -82,14 +77,12 @@ i.fas.fa-map-marker-alt {
   border-bottom-left-radius: 15px;
   width: 15px;
 }
-
 input {
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
   border-right: none;
   border-left: none;
 }
-
 button {
   background-color: #0065fc;
   color: white;
@@ -100,14 +93,12 @@ button {
   font-weight: lighter;
   width: 100px;
 }
-
 i.fas.fa-search {
   display: none;
 }
 /*End Champ de recherche*/
 
 /*Start Filtre*/
-
 h2 {
   float: left;
   margin-top: 0px;
@@ -123,7 +114,6 @@ h2 {
   display: flex;
   justify-content: flex-start;
 }
-
 .elements.flex {
   display: flex;
   align-items: center;
@@ -133,12 +123,12 @@ h2 {
   border-radius: 20px;
   border-left: none;
 }
-
-.fas.fa a:hover,
 .elements.flex a:hover {
   background-color: #deebff;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border: #deebff solid 1.5px;
 }
 
 .space_objet_word {
@@ -148,7 +138,6 @@ h2 {
   font-size: 0.9rem;
   font-weight: 700;
 }
-
 i.fas.fa-money-bill-wave,
 i.fas.fa-child,
 i.fas.fa-heart,
@@ -216,14 +205,13 @@ i.fas.fa-dog {
   font-weight: 700;
   font-size: 1.1em;
 }
-
 .bloc_white_hebergement_top {
   margin-right: 35px;
   margin-left: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  gap: 25px;
   grid-auto-rows: repeat(2, 1fr);
 }
 
@@ -234,6 +222,7 @@ i.fas.fa-dog {
   border-top-left-radius: 10px;
   object-fit: cover;
 }
+
 .figure_cannebière {
   background-color: white;
   border-radius: 10px;
@@ -285,7 +274,6 @@ i.fas.fa-dog {
   grid-column: 2;
   grid-row: 3/5;
 }
-
 .figure_amina {
   background-color: white;
   border-radius: 10px;
@@ -296,9 +284,9 @@ i.fas.fa-dog {
   grid-column: 3;
   grid-row: 3/5;
 }
-
 .text_card {
   margin-left: 15px;
+  color: black;
 }
 .name_hostel {
   font-size: 13px;
@@ -327,6 +315,7 @@ i.fas.fa-dog {
 }
 .title_afficher-plus {
   margin-left: 35px;
+  margin-top: 0px;
   font-weight: 700;
   font-size: 0.9em;
 }
@@ -353,12 +342,10 @@ i.fas.fa-dog {
   margin-left: 5%;
   margin-right: 5%;
 }
-
 .title_populaires {
   font-size: 1.1em;
   font-weight: 700;
 }
-
 .figure_Section_hostel_right {
   height: 130px;
   background: white;
@@ -368,7 +355,6 @@ i.fas.fa-dog {
   margin-right: 5%;
   padding: 5px 0 5px 5px;
 }
-
 .photo_article_2 {
   float: left;
   border-top-left-radius: 10px;
@@ -378,9 +364,10 @@ i.fas.fa-dog {
   object-fit: cover;
   margin-right: 15px;
 }
-.text_card_article_2 {
-}
 
+.text_card_article_2 {
+  color: black;
+}
 .name_hostel_article_2 {
   font-size: 13px;
   font-weight: 700;
@@ -405,7 +392,6 @@ i.fas.fa-dog {
   margin-left: 5%;
   margin-bottom: 80px;
 }
-
 .title_activites {
   font-size: 1.1em;
   margin-bottom: 20px;
@@ -416,7 +402,6 @@ i.fas.fa-dog {
   grid-gap: 30px;
   grid-auto-rows: minmax(100px, auto);
 }
-
 .photo_section_3 {
   width: 100%;
   height: 430px;
@@ -437,14 +422,14 @@ i.fas.fa-dog {
   margin-left: 20px;
   font-size: 15px;
   font-weight: 700;
+  color: black;
 }
-
 .text_small_card_section_3 {
   margin-left: 20px;
   font-size: 15px;
   font-weight: 700;
+  color: black;
 }
-
 .one {
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
   border-radius: 20px;

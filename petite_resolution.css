@@ -101,6 +101,7 @@ nav a:hover {
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 35px;
+  gap: 20px;
 }
 .title_hebergements {
   margin-left: 5%;
