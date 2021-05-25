@@ -123,7 +123,7 @@ h2 {
   border-radius: 20px;
   border-left: none;
 }
-.elements.flex a:hover {
+li a:hover {
   background-color: #deebff;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
