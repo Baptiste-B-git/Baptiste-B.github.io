@@ -1,98 +1,49 @@
-/*Start Navigation et logo*/
-.logo {
-  position: absolute;
-  margin-left: 3%;
-  top: 10px;
-  left: 20px;
-}
-
-.element_accomodation {
-  padding-top: 70px;
-  padding-bottom: 20px;
-  width: 100%;
-  text-align: center;
+input {
+  border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
+  border-right: none;
+  border-left: none;
+  max-width: 840px;
+  width: 80%;
 }
 
-.element_accomodation:hover {
-  border-bottom: 2px solid#0065FC;
-  padding-bottom: 20px;
-  width: 50%;
-}
-.element_activities {
-  padding-top: 70px;
-  padding-bottom: 20px;
-  width: 100%;
-  text-align: center;
-  border-bottom: 2px solid #f2f2f2;
-}
-.anchor:hover {
-  border-bottom: 2px solid#0065FC;
-  padding-bottom: 20px;
-  width: 50%;
-}
-
-.navigation {
-  flex-direction: row;
-  padding: 0;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.login {
+button {
+  border-radius: 10px;
+  width: 35px;
+  height: 48px;
   position: absolute;
-  top: 29px;
-  right: 30px;
-  font-weight: bolder;
-  padding: 0;
+  font-weight: 900;
+  right: 5%;
+  padding-right: 33px;
+  padding-bottom: 13px;
 }
-
-nav a:hover {
-  border-top: none;
+.hide {
+  display: none;
+  width: 0%;
 }
-/*End Navigation et logo*/
-
-/*start filtres*/
-.filters {
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
+i.fas.fa-search {
+  display: block;
+  color: white;
 }
-.filters_list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
-.elements_flex {
-  margin-top: 10px;
-}
-/*end filtres*/
-
-/*start info*/
-.info {
-  margin-top: 20px;
-}
-/*end info*/
+/*end champ de recherche*/
 
 /*Start Section*/
 #blocs {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin-top: 30px;
   margin-bottom: 30px;
   margin-right: 0;
   margin-left: 0;
-  gap: 50px;
 }
-
-/*start section 1*/
+/*Start section 1*/
 .bloc_accomodation {
   order: 2;
   background-color: white;
+  border-radius: 20px;
+  margin-right: 5%;
   width: 100%;
+  min-width: 0px;
   height: auto;
 }
 .title_accomodation {
@@ -103,118 +54,121 @@ nav a:hover {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  gap: 20px;
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 35px;
-  gap: 20px;
 }
 
 .photo_section_1 {
-  height: 80%;
+  height: 60%;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  object-fit: cover;
 }
 
 .figure_cannebière {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  height: 350px;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
 }
 .figure_port {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  height: 350px;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
 }
 .figure_mouettes {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  height: 350px;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
 }
 .figure_mer {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  height: 350px;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
 }
 .figure_panier {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  height: 350px;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
 }
 
 .figure_amina {
   background-color: white;
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
-  height: 350px;
+  border-radius: 10px;
+  height: 175px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
 }
 .text_show_more {
   margin-left: 5%;
+  font-weight: 700;
   font-size: 1.1em;
 }
-/*end section 1*/
+/*End section 1*/
 
-/*start section 2*/
-.bloc_most_popular {
-  order: 1;
-  background-color: #f2f2f2;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  border-radius: 0;
-  width: 100%;
-  height: 550px;
-  gap: 15px;
-}
-
-.popular_all-rooms {
-  background-color: white;
+/*Start section 3*/
+#marseille_activities {
+  margin-top: 50px;
   margin-right: 5%;
   margin-left: 5%;
-}
-
-.title_populaires {
-  font-size: 1.3em;
-}
-
-.fas.fa-chart-line {
-  font-size: 20px;
-}
-/*end section 2*/
-
-/*start section 3*/
-.title_activities {
-  font-size: 1.3em;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .activities_all_card {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  height: auto;
-  gap: 40px;
+  gap: 20px;
 }
 .img_activity_long_card {
   width: 100%;
-  height: 350px;
+  height: 130px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   object-fit: cover;
-  margin-bottom: 20px;
-}
-.img_activity_small_card {
-  width: 100%;
-  height: 350px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
+.img_activity_small_card {
+  width: 100%;
+  height: 120px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
 .text_activity_long_card {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .text_activity_small_card {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
+
 .activity_1 {
   box-shadow: 5px 5px 10px rgb(120, 118, 118);
   border-radius: 20px;
@@ -255,17 +209,12 @@ nav a:hover {
   grid-column: 4;
   grid-row: 3/5;
 }
+
 /*End section 3*/
 /*End Section*/
 
 /*Start Footer*/
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 5%;
-}
-.menu_endpage {
-  padding-left: 0;
+  padding-left: 7%;
 }
 /*End Footer*/

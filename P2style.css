@@ -13,7 +13,7 @@ body {
 
 /*Start Header*/
 /*Start Navigation et logo*/
-.logo {
+.logo_reservia {
   display: flex;
   flex: auto;
   height: 50px;
@@ -66,6 +66,7 @@ nav a:hover {
 
 /* Start Champ de recherche*/
 .search_bloc {
+  margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
   display: flex;
@@ -155,13 +156,11 @@ i.fas.fa-dog {
 .info {
   display: flex;
   align-items: center;
-  margin: 0;
 }
 .fas.fa-info.info {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
   border-radius: 50%;
   width: 1.2rem;
   height: 1.2rem;
@@ -171,7 +170,6 @@ i.fas.fa-dog {
 }
 .text_info {
   padding-left: 10px;
-  line-height: 1em;
   font-size: 0.875em;
 }
 /*end info*/
@@ -458,7 +456,6 @@ i.fas.fa-dog {
   grid-row: 3/5;
 }
 /*End Section 3*/
-/*End Section*/
 
 /*Start Footer*/
 .footer {
@@ -471,7 +468,7 @@ i.fas.fa-dog {
   font-weight: bolder;
   width: 100%;
 }
-.footer_element a,
+
 .footer_element {
   color: black;
   text-decoration: none;
