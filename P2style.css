@@ -207,7 +207,6 @@ i.fas.fa-dog {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  grid-auto-rows: repeat(2, 1fr);
 }
 
 .accomodation_all_img {
