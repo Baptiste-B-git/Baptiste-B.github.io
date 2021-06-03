@@ -325,7 +325,6 @@ i.fas.fa-dog {
 .bloc_most_popular {
   display: grid;
   grid-template-rows: auto;
-  justify-content: space-between;
   max-height: 550px;
   width: 35%;
   min-width: 280px;
